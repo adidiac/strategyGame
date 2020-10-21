@@ -1,0 +1,31 @@
+#home-image
+{
+    margin-left: 1100px;
+    margin-right: 1100px;
+    width: 500px;
+    height: 300px;
+}
+#start-screen
+{
+    border: 20px;
+    border-color: azure;
+    border-style: double;
+    border-radius: 20px;
+    margin: 100px;
+    width: 90vw;
+    height: 37vw;
+    background-color:coral ;
+}
+#home-title
+{
+    font-size: 100px;
+    text-align: center;
+}
+h3
+{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 600px;
+    margin-right: 600px;
+}
