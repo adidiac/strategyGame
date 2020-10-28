@@ -1,31 +1,39 @@
 #home-image
 {
-    margin-left: 1100px;
-    margin-right: 1100px;
-    width: 500px;
-    height: 300px;
+    height: 200px;
+    width: max-content;
+    text-align: center;
+    padding-left: 580px;
 }
 #start-screen
 {
+    position: relative;
+    display: table-cell;
     border: 20px;
     border-color: azure;
     border-style: double;
     border-radius: 20px;
     margin: 100px;
-    width: 90vw;
-    height: 37vw;
+    width: 100vw;
+    height: 500px;
     background-color:coral ;
 }
 #home-title
 {
-    font-size: 100px;
+    font-size: 50px;
     text-align: center;
 }
 h3
 {
-    padding-top: 80px;
-    text-align: center;
-    font-size: 40px;
-    margin-left: 600px;
-    margin-right: 600px;
+    padding: 10px;
+    text-align:center;
+    font-size: 20px;
+}
+#Start-button{
+    background-color: burlywood;
+    height: 50px;
+    width: 70px;
+    position: relative;
+    left: 48%;
+    margin-bottom: 50px;
 }

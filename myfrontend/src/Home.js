@@ -15,7 +15,7 @@ export default class Home extends React.Component {
         Your main objective is to analize the battle and to select the right force.</h3>
         <h3>Press Start to begin.
       </h3>
-      <button onClick={()=>{history.push('/select-army')}}>Start</button>
-      </div>
+      <button  id="Start-button" onClick={()=>{history.push('/select-army');history.go()}}>Start</button>
+     </div>
   }
 }
