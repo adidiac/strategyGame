@@ -65,15 +65,92 @@
     grid-area: center;
     background-color:coral ;
 }
-
+#Others
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#row1_info
+{
+    margin-top: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#row2_info
+{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#soldiers
+{
+  flex-direction: column;
+  display: flex; 
+  width: 70%; 
+  justify-content: space-evenly;
+}
 
 #info-army
 {
     grid-area: footer;
     border: 20px;
     height: 400px;
+    display: flex;
+    flex-direction: row;
     border-color: azure;
     border-style: double;
     border-radius: 20px;
     background-color:coral ;
+}
+#row-1-info
+{
+    margin-top: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#row-2-info
+{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#image_prepare
+{
+    height: 200px;
+    width: 100%;
+}
+#menu_prepare
+{
+    position: relative;
+}
+#image
+{
+    width: 20%;
+}
+#child_prepare
+{
+    position: absolute;
+    top:20px;
+}
+#start_game_button
+{
+    background-color: coral;
+    position: absolute;
+    top:60px;
+    left:740px;
+    height: 60px;
+    width: 140px;
+}
+#go_home
+{
+    background-color:coral;
+    width: 120px;
+    left:20px;
+    position: absolute;
 }

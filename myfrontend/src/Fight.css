@@ -1,0 +1,31 @@
+#principal_image
+{
+    width: 100%;
+    max-height: 100vh;
+}
+#fight
+{
+    position: relative;
+}
+#myProgress {
+    position: absolute;
+    width: 60%;
+    top: 50px;
+    left:300px;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+  }
+  #container
+  {
+    position: absolute;
+    top:500px;
+    width: 200vh;
+    left: 10px;
+    right: 0;
+    height: 250px;
+  }

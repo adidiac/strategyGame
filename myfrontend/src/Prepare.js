@@ -5,10 +5,12 @@ import history from './history'
 import './Prepare.css';
 import './Item'
 import Item from './Item';
-var germany_soldiers=[<Item image={require("./assets/German_soldiers/soldier1.png")} title={"German soldier"} />,
-<Item image={require("./assets/German_soldiers/soldier2.png")} title={"German officer"} />,
-<Item image={require("./assets/German_soldiers/soldier3.png")} title={"German soldier sniper"} />,
-<Item image={require("./assets/German_soldiers/soldier4.png")} title={"German general"} />,
+import Info_Item from './Info_Item'
+import Item_Enemy from './Item_Enemy'
+var germany_soldiers=[<Item_Enemy image={require("./assets/German_soldiers/soldier1.png")} title={"German soldier"} amount={70}/>,
+<Item_Enemy image={require("./assets/German_soldiers/soldier2.png")} title={"German officer"} amount={20}/>,
+<Item_Enemy image={require("./assets/German_soldiers/soldier3.png")} title={"German soldier sniper"} amount={8}/>,
+<Item_Enemy image={require("./assets/German_soldiers/soldier4.png")} title={"German general"} amount={2}/>,
 ];
 export default class Prepare extends React.Component {
   constructor(props) {
@@ -20,7 +22,13 @@ export default class Prepare extends React.Component {
   }
   render() {
     return <div id="prepare-screen">
-        <button on onClick={()=>{history.push("/");history.go();}}>GO to Home</button>
+      <div id="menu_prepare">
+        <img id="image_prepare" src={require('./assets/Background.png')}></img>
+        <div id="child_prepare">
+        <button on onClick={()=>{history.push("/");history.go();}} id="go_home">GO to Home</button>
+        <button id="start_game_button" onClick={()=>{history.push("/fight");history.go()}}>Start Game</button>
+        </div>
+        </div>
       <div id="grid">
       <div id="select-army">
       <h1 id="Select-army-title">Your Army</h1>
@@ -56,8 +64,29 @@ export default class Prepare extends React.Component {
       </div>
       </div>
       <div id="info-army">
-
-
+        <div id="soldiers">
+      <div id="row-1-info">
+      <Info_Item image={require("./assets/Soldiers/Soldier1.png")} info={"France soldier"} />
+        <Info_Item image={require("./assets/Soldiers/Soldier2.gif")} info={"United Kingdom soldier"} />
+        <Info_Item image={require("./assets/Soldiers/Soldier3.png")} info={"US soldier"} />
+        <Info_Item image={require("./assets/Tank.png")} info={"US tanks"} />
+        </div>
+      <div id="row-2-info">
+      <Info_Item image={require("./assets/German_soldiers/soldier1.png")} info={"German soldier"}/>
+<Info_Item image={require("./assets/German_soldiers/soldier2.png")} info={"German officer"}/>
+<Info_Item image={require("./assets/German_soldiers/soldier3.png")} info={"German soldier sniper"}/>,
+<Info_Item image={require("./assets/German_soldiers/soldier4.png")} info={"German general"} />
+        </div>
+        </div>
+        <div id="Others">
+        <div id="row1_info">
+        <Info_Item image={require("./assets/Ground/ground_simple.png")} info={"Simple Ground"}/>
+        <Info_Item image={require("./assets/Ground/flooded.jpg")} info={"Flooded Ground"}/>
+        </div>
+        <div id="row2_info">
+        <Info_Item image={require("./assets/Wheater/rainy.png")} info={"Rainy Wheater"}/>
+          </div>
+        </div> 
       </div>
       <div id="enemy-army">
       <h1 id="Select-army-title">Enemy Army</h1>
