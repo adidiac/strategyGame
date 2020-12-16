@@ -98,7 +98,7 @@
 {
     grid-area: footer;
     border: 20px;
-    height: 400px;
+    height: 550px;
     display: flex;
     flex-direction: row;
     border-color: azure;

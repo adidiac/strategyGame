@@ -7,6 +7,10 @@ export default class Item_Enemy extends React.Component {
       input:50
     }
     }
+    get_value()
+    {
+      return this.props.amount;
+    }
     render() {
       return <div id="item">
         <img id="image" src={this.props.image}></img>

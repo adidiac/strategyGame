@@ -3,7 +3,8 @@ import Home from './Home';
 import history from './history';
 import Prepare from './Prepare'
 import Fight from './Fight'
-import Final from './Final'
+
+import Done from './Done'
 import { Router, Switch, Route, Redirect } from "react-router-dom";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
                     <Route path="/" exact component={Home} />
                     <Route path="/select-army" exact component={Prepare} />
                     <Route path="/fight" exact component={Fight} />
-                    <Route path="/final" exact componet={Final} />
+                    <Route path="/done" exact component={Done} />
                 </Switch>
         </Router>
     </div>

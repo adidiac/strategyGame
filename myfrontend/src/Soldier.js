@@ -1,4 +1,4 @@
-class Soldier
+export default class Soldier
 {
     constructor(speed,defense,accurace, death)
     {

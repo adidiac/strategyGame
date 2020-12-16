@@ -1,4 +1,4 @@
-class Terrain
+export default class Terrain
 {
     constructor(speed,defense,accurece)
     {

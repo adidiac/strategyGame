@@ -36,7 +36,8 @@ export default class Fight extends React.Component {
             if (width >= 100) {
               clearInterval(id);
               clearInterval(window.id_expl);
-              history.push('/final')
+              history.push('/done',{details:history.location.state.details});
+              history.go()
             } else {
               width++;
               elem.style.width = width + "%";
@@ -46,6 +47,7 @@ export default class Fight extends React.Component {
     }
     componentDidMount()
     {
+        
         this.move();
         setInterval(this.explosion(),100);
     }
